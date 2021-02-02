@@ -1,0 +1,25 @@
+<products>
+	<product sr="1">
+		<id1>11</id1>
+		<name1>samsung</name1>
+		<price1>35000</price1>
+		<s1>50</s1>
+		<status1>1</status1>
+	</product>
+   <product sr="2">
+		<id1>20</id1>
+		<name1>htc</name1>
+		<price1>65300</price1>
+		<s1>35</s1>
+		<status1>0</status1>
+	</product>
+	<product sr="3">
+		<id1>23</id1>
+		<name1>nokia</name1>
+		<price1>25100</price1>
+		<s1>100</s1>
+		<status1>1</status1>
+	</product>
+	
+</products>
+

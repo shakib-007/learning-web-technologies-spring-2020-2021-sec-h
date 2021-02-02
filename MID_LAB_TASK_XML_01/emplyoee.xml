@@ -1,0 +1,23 @@
+<emplyoees>
+	<emplyoee sr="1">
+		<id>1</id>
+		<name>john_doe</name>
+		<address>house38,r3,banani,dhaka </address>
+		<department>sales</department>
+		<salary>20000</salary>
+	</emplyoee>
+	<emplyoee sr="2">
+		<id>1</id>
+		<name>mark_zukerberg</name>
+		<address>flatA/1,house20,r18,mirpur,dhaka </address>
+		<department>accounts</department>
+		<salary>12000</salary>
+	</emplyoee>
+	<emplyoee sr="3">
+		<id>1</id>
+		<name>ala_voxki</name>
+		<address>house38,r3,motijeel </address>
+		<department>humanResource</department>
+		<salary>30000</salary>
+	</emplyoee>
+</emplyoees>
