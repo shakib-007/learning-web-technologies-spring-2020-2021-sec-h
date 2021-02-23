@@ -1,3 +1,21 @@
+<?php
+	
+	
+	
+	if(isset($_POST['submit']))
+	{
+
+		
+		$Newpass=$_POST['Npassword'];
+		$Currpass=$_POST['Cpassword'];	
+
+		if ($Newpass!=$Currpass) {
+			echo "please retype password!";
+		}
+			
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,23 +27,27 @@
 		<fieldset>
 			<legend>REGISTRATION</legend>
 			<table>
-			<tr>
-			<td>Name:</td>
-			<td><input type="text" name="myname" value="">  </td>
-			</tr>
-			<tr>
-			<td>Userame:</td> 		 
-			<td><input type="text" name="myname" value="">  </td>
-		</tr>
-		<tr>
-			<td>Password:</td>     
-			<td><input type="password" name="password" value=""> </td>
-		</tr>
-		<tr>
-			<td>Confirm Password:</td>
-			<td><input type="password" name="password" value=""> </td>
-		</tr>
-</table>
+				<tr>
+				<td>Name</td>
+				<td>:<input type="text" name="myname" value="">  </td>
+				</tr>
+				<tr>
+				<td>Email</td>
+				<td>:<input type="email" name="email" value="">  </td>
+				</tr>
+				<tr>
+				<td>Userame</td> 		 
+				<td>:<input type="text" name="myname" value="">  </td>
+				</tr>
+				<tr>
+					<td>Password</td>     
+					<td>:<input type="password" name="Npassword" value=""> </td>
+				</tr>
+				<tr>
+					<td>Confirm Password</td>
+					<td>:<input type="password" name="Cpassword" value=""> </td>
+				</tr>
+            </table>
 			<fieldset >
 			<legend>Gender</legend>
 						<input type="radio" name="genderM"> Male
@@ -49,8 +71,8 @@
 			
 		</fieldset>
 			<br>
-				<input type="submit" name="" value="Submit">
-				<input type="reset" name="" value="Reset">
+				<input type="submit" name="submit" value="Submit">
+				<input type="reset" name="reset" value="Reset">
 		</fieldset>
 	</form>
 </body>
