@@ -8,8 +8,13 @@
 		$name = $_POST['myname'];
 		$password=$_POST['password'];
 				
-			if(count($name)>='2'&&count($password)>='8'){
-				echo "success!!";
+			if(strlen($name)>=2&&strlen($password)>=8){
+				for ($i=0; $i < strlen($password); $i++) { 
+					if($password[$i] === '@' || $password[$i] === '#' || $password[$i] === '$' || $password[$i] === '%')
+					{
+						echo "Success!!";
+					}
+				}
 			}	
 			else
 			{
