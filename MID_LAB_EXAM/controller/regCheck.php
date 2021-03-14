@@ -12,6 +12,7 @@
 					'pass'=>$_POST['password'],
 					'name'=>$_POST['name'],
 					'id'=>$_POST['id'],
+					'option'=>$_POST['option'],
 					
 				];
 				$user = json_encode($data);

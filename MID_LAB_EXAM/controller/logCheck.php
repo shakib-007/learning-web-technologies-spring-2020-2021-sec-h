@@ -9,6 +9,7 @@
 		
 		$username = $userinfo['user'];
 		$password = $userinfo['pass'];
+		$option =$userinfo['option'];
 
 		if($username == "" || $password == ""){
 			echo "null submission...";
@@ -16,7 +17,7 @@
 
 			if($username == $_POST['username'] && $password == $_POST['password']){
 				$_SESSION['flag'] = true;
-				header('location: .php');
+				header('location: admin.php');
 			}else{
 				echo "invalid user";
 			}

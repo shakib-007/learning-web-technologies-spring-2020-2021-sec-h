@@ -32,8 +32,8 @@
            </table>
             <p>User Type</p>
             <hr>
-                  <input type="radio" name="gender"> User
-                  <input type="radio" name="gender"> Admin
+                  <input type="radio" name="option"> User
+                  <input type="radio" name="option"> Admin
                 
                   
             
