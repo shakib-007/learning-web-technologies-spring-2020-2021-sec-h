@@ -1,10 +1,16 @@
 <?php
 	$title= "Home Page";
-	include('header.php');
+
+	//include('header.php');
+	//include_once('header.php');
+
+	//require('header.php');
+	require_once('header.php');
+
 ?>
 
 	<div id="page_title">
-		<h1>Welcome home, <?php echo $_SESSION['current_user']['username'];?></h1>
+		<h1>Welcome home, <?php echo $_SESSION['username'];?></h1>
 	</div>
 
 	<div id='nav_bar'>

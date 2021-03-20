@@ -1,6 +1,6 @@
 <?php
-	require('../model/db.php');
 	session_start();
+	require_once('../model/userModel.php');
 
 	if(isset($_POST['signup'])){
 
@@ -8,7 +8,6 @@
 		$password = $_POST['password'];
 		$repass = $_POST['repass'];
 		$email = $_POST['email'];
-		$sql = "insert into user values('1', '$username', '$password', '$email')";
 
 		if($username == "" || $email == "" || $password == "" || $repass == ""){
 			echo "null submission...";
@@ -16,17 +15,21 @@
 
 			if($password == $repass){
 
-				$user = [	
-							'username'=>$username, 
-							'password'=>$password, 
-							'email'=> $email
+				$user = [
+							'username' => $username,
+							'password' => $password,
+							'email' => $email,
+							'type' => 'user'
 						];
 
-				//$_SESSION['username'] = $username;
-				//$_SESSION['password'] = $password;
-				$_SESSION['current_user'] = $user;
+				$status = insertUser($user);
 
-				header('location: ../view/login.html');
+				if($status){
+					header('location: ../view/login.html');
+				}else{
+					echo "error";
+				}
+
 			}else{
 				echo "password & confirm password mismatch..";
 			}
